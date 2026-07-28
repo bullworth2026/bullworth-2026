@@ -426,7 +426,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/lo2qfjT.png',
         imgPos: 'center 25%',
         desc: 'Os Titãs dos Bullhorns impõem presença com 1,85m de altura, força acima da média e resistência incomum. Representam a brutalidade direta e a supremacia corporal, onde peso, impacto e imposição física resolvem o combate. Temidos pelo potencial de destruição que sua estrutura corporal aparenta.',
-        skills: ['Fundamentos do Wrestling', 'Constituição Titânica', 'Brutalizador', 'Fúria do Titã (Merecimento/Mercado)', 'Avanço Irrefreável (Merecimento/Mercado)']
+        skills: ['Fundamentos do Wrestling', 'Constituição Titânica', 'Brutalizador', 'Fúria do Titã (Merecimento/Mercado - R$ 15,00)', 'Avanço Irrefreável (Merecimento/Mercado - R$ 15,00)']
       },
       {
         title: 'Linebacker dos Bullhorns — R$ 25,00',
@@ -436,7 +436,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/deIyDhW.jpeg',
         imgPos: 'center 30%',
         desc: 'O Linebacker dos Bullhorns personifica energia explosiva e agilidade atlética. Com 1,75m e musculatura definida, sua vantagem é a velocidade de reação e capacidade de cobrir grandes distâncias em segundos, sendo um dos atletas mais rápidos do time.',
-        skills: ['Wrestling Intermediário', 'Atleta em Ascensão', 'Segundo Vento', 'Salvador da Pátria (Merecimento/Mercado)', 'Superman Punch (Merecimento/Mercado)']
+        skills: ['Wrestling Intermediário', 'Atleta em Ascensão', 'Segundo Vento', 'Salvador da Pátria (Merecimento/Mercado - R$ 15,00)', 'Superman Punch (Merecimento/Mercado - R$ 15,00)']
       },
     ],
     bullies: [
@@ -458,7 +458,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/OMBE0IB.jpeg',
         imgPos: 'center 15%',
         desc: 'Personificação da força bruta. Com 1,80m e físico parrudo, usa peso e táticas trapaceiras para encurralar adversários. Protege o estacionamento contra incursões, garantindo que ninguém cruze os limites sem pagar o preço.',
-        skills: ['Abraço de Urso', 'Ataque Surpresa', 'Trapaceiro de Bullworth', 'Covardia Matinal (Merecimento/Mercado)', 'Casca Grossa (Merecimento/Mercado)']
+        skills: ['Abraço de Urso', 'Ataque Surpresa', 'Trapaceiro de Bullworth', 'Covardia Matinal (Merecimento/Mercado - R$ 15,00)', 'Casca Grossa (Merecimento/Mercado - R$ 15,00)']
       },
     ],
     nerds: [
@@ -470,7 +470,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/BfJAN85.jpeg',
         imgPos: 'center 25%',
         desc: 'Clássico nerd que levou RPG a sério demais. Baixinho e frágil, compensa a falta de músculos com inteligência genial. Em vez de confrontos diretos, usa conhecimento científico e criatividade para virar o jogo à distância.',
-        skills: ['Mestrando a Química', 'Palavra de Poder', 'Fórmula da Coceira', 'Feitiço do Extintor (Merecimento/Mercado)', 'Poção da Velocidade (Merecimento/Mercado)']
+        skills: ['Mestrando a Química', 'Palavra de Poder', 'Fórmula da Coceira', 'Feitiço do Extintor (Merecimento/Mercado - R$ 15,00)', 'Poção da Velocidade (Merecimento/Mercado - R$ 15,00)']
       },
       {
         title: 'Hacker do Campus — R$ 25,00',
@@ -480,7 +480,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/1rFzpn7.jpeg',
         imgPos: 'center 20%',
         desc: 'Domina redes locais, sistemas escolares e dispositivos eletrônicos. Prefere a sutileza do código: controla o Wi-Fi, manipula aparelhos à distância e usa a tecnologia do ambiente para ditar as regras do jogo.',
-        skills: ['Mestre dos Códigos', 'Bloqueio de Sinal', 'Rastreador de Dispositivos', 'Drone de Espionagem (Merecimento/Mercado)', 'Vazamento de Dados (Merecimento/Mercado)']
+        skills: ['Mestre dos Códigos', 'Bloqueio de Sinal', 'Rastreador de Dispositivos', 'Drone de Espionagem (Merecimento/Mercado - R$ 15,00)', 'Vazamento de Dados (Merecimento/Mercado - R$ 15,00)']
       },
     ],
     preppies: [
@@ -492,7 +492,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/idUgJ0l.jpeg',
         imgPos: 'center 20%',
         desc: 'Linha de frente do combate em pé. Busca espaço com combinações rápidas, posicionamento rígido e precisão. Especialista em ler movimentos do adversário para ditar o ritmo, quebrar defesas e buscar o nocaute.',
-        skills: ['Nobre Arte', 'Pesadelo dos Ringues', 'Agilidade Combativa', 'Combinações de Boxe (Merecimento/Mercado)', 'Reflexos Apurados (Merecimento/Mercado)']
+        skills: ['Nobre Arte', 'Pesadelo dos Ringues', 'Agilidade Combativa', 'Combinações de Boxe (Merecimento/Mercado - R$ 15,00)', 'Reflexos Apurados (Merecimento/Mercado - R$ 15,00)']
       },
       {
         title: 'Diplomata Ilustre — R$ 25,00',
@@ -502,7 +502,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/tjLaoJF.jpeg',
         imgPos: 'center 15%',
         desc: 'Dita o ritmo do ambiente através do prestígio do sobrenome, retórica afiada e recursos financeiros. Atua na desestabilização psicológica, usando subornos e tráfico de influência para isolar ameaças.',
-        skills: ['Treinamento Marcial', 'Imunidade Diplomática', 'Gestão de Crise', 'Safezone (Merecimento/Mercado)', 'Isolamento de Alvo (Merecimento/Mercado)']
+        skills: ['Treinamento Marcial', 'Imunidade Diplomática', 'Gestão de Crise', 'Safezone (Merecimento/Mercado - R$ 15,00)', 'Isolamento de Alvo (Merecimento/Mercado - R$ 15,00)']
       },
     ],
     greasers: [
@@ -514,7 +514,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/yPWEYUL.png',
         imgPos: 'center 25%',
         desc: 'Combatente perigoso e sanguinário que dita ritmo avassalador. Prioriza causar dano máximo com ofensiva perfeita, usando golpes poderosos para subjugar adversários pela força bruta e persistência.',
-        skills: ['Nak Muay', 'Sanguinário', 'Joelhada Voadora', 'Combo Descolado (Merecimento/Mercado)', 'Cotovelada Giratória (Merecimento/Mercado)']
+        skills: ['Nak Muay', 'Sanguinário', 'Joelhada Voadora', 'Combo Descolado (Merecimento/Mercado - R$ 15,00)', 'Cotovelada Giratória (Merecimento/Mercado - R$ 15,00)']
       },
       {
         title: 'Protetor do Beco — R$ 25,00',
@@ -524,7 +524,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/epnSD9U.png',
         imgPos: 'center 30%',
         desc: 'Combina robustez física com pragmatismo das ruas. Equilíbrio entre tamanho e agilidade, demonstrando habilidade corporal para se mover com rapidez e reagir com precisão a qualquer ameaça.',
-        skills: ['Oito Armas', 'Contenção Forçada', 'Bloqueio Reforçado', 'Marca do Protetor (Merecimento/Mercado)', 'Chute Descolado (Merecimento/Mercado)']
+        skills: ['Oito Armas', 'Contenção Forçada', 'Bloqueio Reforçado', 'Marca do Protetor (Merecimento/Mercado - R$ 15,00)', 'Chute Descolado (Merecimento/Mercado - R$ 15,00)']
       },
     ],
     cheerleaders: [
@@ -536,7 +536,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/rIAUdSY.jpeg',
         imgPos: 'center 20%',
         desc: 'Carisma magnético e brilho natural. Atrai olhares e conquista atenção com facilidade. Sua presença dita o ritmo social, permitindo conseguir favores, desviar atenções e usar a popularidade como ferramenta de influência.',
-        skills: ['Influencer de Bullworth', 'Tratamento VIP', 'Língua Afiada', 'Spray de Pimenta (Merecimento/Mercado)', 'Megafone (Merecimento/Mercado)']
+        skills: ['Influencer de Bullworth', 'Tratamento VIP', 'Língua Afiada', 'Spray de Pimenta (Merecimento/Mercado - R$ 15,00)', 'Megafone (Merecimento/Mercado - R$ 15,00)']
       },
     ],
     press: [
@@ -548,7 +548,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/RNk7x9y.jpeg',
         imgPos: 'center 25%',
         desc: 'Olhos e ouvidos dos bastidores. Munido de equipamentos tecnológicos e perspicácia aguçada, não busca confronto físico, mas controle absoluto das narrativas. Registra deslizes e molda a opinião pública.',
-        skills: ['Edição de Fatos', 'Microfone Oculto', 'Selfie Stick', 'Óculos Gravador (Merecimento/Mercado)', 'Contato de Emergência (Merecimento/Mercado)']
+        skills: ['Edição de Fatos', 'Microfone Oculto', 'Selfie Stick', 'Óculos Gravador (Merecimento/Mercado - R$ 15,00)', 'Contato de Emergência (Merecimento/Mercado - R$ 15,00)']
       },
     ],
   }
