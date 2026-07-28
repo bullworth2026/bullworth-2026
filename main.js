@@ -426,7 +426,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/lo2qfjT.png',
         imgPos: 'center 25%',
         desc: 'Os Titãs dos Bullhorns impõem presença com 1,85m de altura, força acima da média e resistência incomum. Representam a brutalidade direta e a supremacia corporal, onde peso, impacto e imposição física resolvem o combate. Temidos pelo potencial de destruição que sua estrutura corporal aparenta.',
-        skills: ['Fundamentos do Wrestling', 'Constituição Titânica', 'Brutalizador', 'Fúria do Titã (Merecimento/Mercado - R$ 15,00)', 'Avanço Irrefreável (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Fundamentos do Wrestling', 'Constituição Titânica', 'Brutalizador', 'Fúria do Titã (Merecimento/Mercado)', 'Avanço Irrefreável (Merecimento/Mercado)']
       },
       {
         title: 'Linebacker dos Bullhorns — R$ 25,00',
@@ -436,7 +436,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/deIyDhW.jpeg',
         imgPos: 'center 30%',
         desc: 'O Linebacker dos Bullhorns personifica energia explosiva e agilidade atlética. Com 1,75m e musculatura definida, sua vantagem é a velocidade de reação e capacidade de cobrir grandes distâncias em segundos, sendo um dos atletas mais rápidos do time.',
-        skills: ['Wrestling Intermediário', 'Atleta em Ascensão', 'Segundo Vento', 'Salvador da Pátria (Merecimento/Mercado - R$ 15,00)', 'Superman Punch (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Wrestling Intermediário', 'Atleta em Ascensão', 'Segundo Vento', 'Salvador da Pátria (Merecimento/Mercado)', 'Superman Punch (Merecimento/Mercado)']
       },
     ],
     bullies: [
@@ -448,7 +448,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/MlJOJ1U.jpeg',
         imgPos: 'center 20%',
         desc: 'Combatente sinuoso e ardiloso, sem apego a regras. Especialista em armadilhas improvisadas e controle estratégico do perímetro, sabotando a mobilidade inimiga antes mesmo dos golpes. Usa artefatos inusitados para ludibriar adversários.',
-        skills: ['Arsenal de Pegadinhas', 'Armadilheiro', 'Reposicionamento Tático', 'Presentinho Perverso (Merecimento/Mercado - R$ 15,00)', 'Suporte de Combate (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Arsenal de Pegadinhas', 'Armadilheiro', 'Reposicionamento Tático', 'Presentinho Perverso (Merecimento/Mercado)', 'Suporte de Combate (Merecimento/Mercado)']
       },
       {
         title: 'Gigante dos Bullies — R$ 25,00',
@@ -458,7 +458,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/OMBE0IB.jpeg',
         imgPos: 'center 15%',
         desc: 'Personificação da força bruta. Com 1,80m e físico parrudo, usa peso e táticas trapaceiras para encurralar adversários. Protege o estacionamento contra incursões, garantindo que ninguém cruze os limites sem pagar o preço.',
-        skills: ['Abraço de Urso', 'Ataque Surpresa', 'Trapaceiro de Bullworth', 'Covardia Matinal (Merecimento/Mercado - R$ 15,00)', 'Casca Grossa (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Abraço de Urso', 'Ataque Surpresa', 'Trapaceiro de Bullworth', 'Covardia Matinal (Merecimento/Mercado)', 'Casca Grossa (Merecimento/Mercado)']
       },
     ],
     nerds: [
@@ -470,7 +470,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/BfJAN85.jpeg',
         imgPos: 'center 25%',
         desc: 'Clássico nerd que levou RPG a sério demais. Baixinho e frágil, compensa a falta de músculos com inteligência genial. Em vez de confrontos diretos, usa conhecimento científico e criatividade para virar o jogo à distância.',
-        skills: ['Mestrando a Química', 'Palavra de Poder', 'Fórmula da Coceira', 'Feitiço do Extintor (Merecimento/Mercado - R$ 15,00)', 'Poção da Velocidade (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Mestrando a Química', 'Palavra de Poder', 'Fórmula da Coceira', 'Feitiço do Extintor (Merecimento/Mercado)', 'Poção da Velocidade (Merecimento/Mercado)']
       },
       {
         title: 'Hacker do Campus — R$ 25,00',
@@ -480,7 +480,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/1rFzpn7.jpeg',
         imgPos: 'center 20%',
         desc: 'Domina redes locais, sistemas escolares e dispositivos eletrônicos. Prefere a sutileza do código: controla o Wi-Fi, manipula aparelhos à distância e usa a tecnologia do ambiente para ditar as regras do jogo.',
-        skills: ['Mestre dos Códigos', 'Bloqueio de Sinal', 'Rastreador de Dispositivos', 'Drone de Espionagem (Merecimento/Mercado - R$ 15,00)', 'Vazamento de Dados (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Mestre dos Códigos', 'Bloqueio de Sinal', 'Rastreador de Dispositivos', 'Drone de Espionagem (Merecimento/Mercado)', 'Vazamento de Dados (Merecimento/Mercado)']
       },
     ],
     preppies: [
@@ -492,7 +492,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/idUgJ0l.jpeg',
         imgPos: 'center 20%',
         desc: 'Linha de frente do combate em pé. Busca espaço com combinações rápidas, posicionamento rígido e precisão. Especialista em ler movimentos do adversário para ditar o ritmo, quebrar defesas e buscar o nocaute.',
-        skills: ['Nobre Arte', 'Pesadelo dos Ringues', 'Agilidade Combativa', 'Combinações de Boxe (Merecimento/Mercado - R$ 15,00)', 'Reflexos Apurados (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Nobre Arte', 'Pesadelo dos Ringues', 'Agilidade Combativa', 'Combinações de Boxe (Merecimento/Mercado)', 'Reflexos Apurados (Merecimento/Mercado)']
       },
       {
         title: 'Diplomata Ilustre — R$ 25,00',
@@ -502,7 +502,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/tjLaoJF.jpeg',
         imgPos: 'center 15%',
         desc: 'Dita o ritmo do ambiente através do prestígio do sobrenome, retórica afiada e recursos financeiros. Atua na desestabilização psicológica, usando subornos e tráfico de influência para isolar ameaças.',
-        skills: ['Treinamento Marcial', 'Imunidade Diplomática', 'Gestão de Crise', 'Safezone (Merecimento/Mercado - R$ 15,00)', 'Isolamento de Alvo (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Treinamento Marcial', 'Imunidade Diplomática', 'Gestão de Crise', 'Safezone (Merecimento/Mercado)', 'Isolamento de Alvo (Merecimento/Mercado)']
       },
     ],
     greasers: [
@@ -514,7 +514,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/yPWEYUL.png',
         imgPos: 'center 25%',
         desc: 'Combatente perigoso e sanguinário que dita ritmo avassalador. Prioriza causar dano máximo com ofensiva perfeita, usando golpes poderosos para subjugar adversários pela força bruta e persistência.',
-        skills: ['Nak Muay', 'Sanguinário', 'Joelhada Voadora', 'Combo Descolado (Merecimento/Mercado - R$ 15,00)', 'Cotovelada Giratória (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Nak Muay', 'Sanguinário', 'Joelhada Voadora', 'Combo Descolado (Merecimento/Mercado)', 'Cotovelada Giratória (Merecimento/Mercado)']
       },
       {
         title: 'Protetor do Beco — R$ 25,00',
@@ -524,7 +524,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/epnSD9U.png',
         imgPos: 'center 30%',
         desc: 'Combina robustez física com pragmatismo das ruas. Equilíbrio entre tamanho e agilidade, demonstrando habilidade corporal para se mover com rapidez e reagir com precisão a qualquer ameaça.',
-        skills: ['Oito Armas', 'Contenção Forçada', 'Bloqueio Reforçado', 'Marca do Protetor (Merecimento/Mercado - R$ 15,00)', 'Chute Descolado (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Oito Armas', 'Contenção Forçada', 'Bloqueio Reforçado', 'Marca do Protetor (Merecimento/Mercado)', 'Chute Descolado (Merecimento/Mercado)']
       },
     ],
     cheerleaders: [
@@ -536,7 +536,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/rIAUdSY.jpeg',
         imgPos: 'center 20%',
         desc: 'Carisma magnético e brilho natural. Atrai olhares e conquista atenção com facilidade. Sua presença dita o ritmo social, permitindo conseguir favores, desviar atenções e usar a popularidade como ferramenta de influência.',
-        skills: ['Influencer de Bullworth', 'Tratamento VIP', 'Língua Afiada', 'Spray de Pimenta (Merecimento/Mercado - R$ 15,00)', 'Megafone (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Influencer de Bullworth', 'Tratamento VIP', 'Língua Afiada', 'Spray de Pimenta (Merecimento/Mercado)', 'Megafone (Merecimento/Mercado)']
       },
     ],
     press: [
@@ -548,7 +548,7 @@ const PACOTES_DATA = {
         img: 'https://i.imgur.com/RNk7x9y.jpeg',
         imgPos: 'center 25%',
         desc: 'Olhos e ouvidos dos bastidores. Munido de equipamentos tecnológicos e perspicácia aguçada, não busca confronto físico, mas controle absoluto das narrativas. Registra deslizes e molda a opinião pública.',
-        skills: ['Edição de Fatos', 'Microfone Oculto', 'Selfie Stick', 'Óculos Gravador (Merecimento/Mercado - R$ 15,00)', 'Contato de Emergência (Merecimento/Mercado - R$ 15,00)']
+        skills: ['Edição de Fatos', 'Microfone Oculto', 'Selfie Stick', 'Óculos Gravador (Merecimento/Mercado)', 'Contato de Emergência (Merecimento/Mercado)']
       },
     ],
   }
@@ -713,8 +713,20 @@ const LINHAGENS_DATA = [
 // ============================================================
 function normalizarNomeHabilidade(nome) {
   // Remove sufixos como " (Merecimento/Mercado)" ou " (Merecimento/Mercado - R$ 15,00)"
-  // Também remove " (Merecimento/Mercado)" sozinho e qualquer variação com preço
   return nome.replace(/\s*\([^)]*\)\s*$/, '').trim();
+}
+
+// ============================================================
+// FUNÇÃO PARA OBTER DESCRIÇÃO COMPARANDO NOMES NORMALIZADOS
+// ============================================================
+function obterDescricao(nome) {
+  const nomeNormalizado = normalizarNomeHabilidade(nome);
+  for (const key in HABILIDADES_DESC) {
+    if (normalizarNomeHabilidade(key) === nomeNormalizado) {
+      return HABILIDADES_DESC[key];
+    }
+  }
+  return null; // não encontrou
 }
 
 // ============================================================
@@ -929,13 +941,11 @@ const ModalHabilidades = {
         let displayName = '';
         
         if (typeof skill === 'string') {
-          // Remove tags HTML para obter o nome puro
           const temp = document.createElement('div');
           temp.innerHTML = skill;
           displayName = temp.textContent || skill;
-          // Extrai o nome sem sufixo (Merecimento/Mercado)
           skillName = normalizarNomeHabilidade(displayName);
-          li.innerHTML = skill; // exibe o nome completo com o custo
+          li.innerHTML = skill;
         } else if (typeof skill === 'object') {
           skillName = normalizarNomeHabilidade(skill.nome || skill.name || '');
           displayName = skill.nome || skill.name || '';
@@ -946,11 +956,9 @@ const ModalHabilidades = {
           li.textContent = displayName;
         }
         
-        // Adiciona evento de clique para mostrar descrição detalhada
         li.addEventListener('click', (e) => {
           e.stopPropagation();
-          // Primeiro tenta com o nome normalizado, se não encontrar, tenta com o original
-          const desc = HABILIDADES_DESC[skillName] || HABILIDADES_DESC[displayName];
+          const desc = obterDescricao(skillName) || obterDescricao(displayName);
           if (desc) {
             this.abrirDescricao(displayName, desc, pacote.color || '#e8a020');
           } else {
