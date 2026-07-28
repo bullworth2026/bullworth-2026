@@ -112,22 +112,22 @@ const FACTIONS = [
   {
     id:'cheerleaders', tag:'BULLWORTH CHERRIES', name:'Cheerleaders', color:'#D4537E',
     img:'https://i.imgur.com/rIAUdSY.jpeg',
-    territory:'Ginásio & Corredores Principais', leader:'Sofia (Capitã)', size:'8 membros ativos',
+    territory:'Ginásio & Corredores Principais', leader:'Julia (Capitã)', size:'8 membros ativos',
     desc:'Enquanto eles quebram narizes, ela constrói alianças. Enquanto eles fazem inimigos, ela coleciona favores. Poder nunca foi sobre dar o primeiro soco — é decidir quem vai dar o último.',
     brief:'Influência. Manipulação. Controle.',
     bonus:'BÔNUS ATIVO: +20% Persuasão · Acesso a qualquer corredor sem tensão',
     lore: {
       title: 'Bullworth Cherries — Por Que Não Uma Rainha?',
-      subtitle: '— Sofia, Capitã das Cheerleaders',
+      subtitle: '— Julia, Capitã das Cheerleaders',
       paragraphs: [
         'Todo mundo nessa escola age como se fosse impossível existir um capitão dos Jocks e uma capitã das Cheerleaders sem acabar trepando escondido embaixo da arquibancada. Qué imaginación de mierda. Eu divido o ginásio com eles, organizo evento com eles. Agora, se eu quero levar algum deles pra cama? Isso já é problema meu. Toda vez que eu preciso de alguma coisa, os atletas simplesmente fazem. Se isso é profissionalismo ou manipulação? Ay, cariño... Chama do que você quiser.',
         'Eu até gosto dos Nerds. Não deles, exatamente... da utilidade deles. Aqueles esquisitos sabem de tudo. De vez em quando inventam que eu compro prova com o Fred ou fico fazendo acordo escondido pelos corredores. Por favor. Se eu realmente estivesse fazendo isso, vocês acham mesmo que iam descobrir?',
         'Os Bullies conseguem me tirar do sério. Aquela história da caloura foi a gota d\'água. Mexer com uma das minhas meninas foi uma decisão tão burra que até hoje eu fico surpresa por eles conseguirem respirar sem ajuda. Eu nem preciso encostar neles. Basta eu olhar pra um atleta, sorrir e dizer "resolve isso pra mim, cariño". Cinco minutos depois o problema desaparece.',
         'Todo mundo nessa escola acha que o próximo Rei tem que ser mais um garoto bravo com o punho fechado e o ego inflado. Qué sorpresa. Dois anos depois da saída do Tyler e o que vocês conseguiram foi transformar Bullworth numa creche de machos disputando quem grita mais alto. Poder nunca foi sobre dar o primeiro soco. Poder é decidir quem vai dar o último. Essa diferença nenhum daqueles idiotas entendeu até hoje.',
       ],
-      quote: '"Eles podem continuar brigando pelo palco. Eu prefiro controlar a música." — Sofia',
+      quote: '"Eles podem continuar brigando pelo palco. Eu prefiro controlar a música." — Julia',
     },
-    meta:[{label:'Líder',val:'Sofia (Capitã)'},{label:'Território',val:'Ginásio & Corredores'},{label:'Aliada',val:'Jocks'},{label:'Estilo',val:'Influência & Manipulação'}]
+    meta:[{label:'Líder',val:'Julia (Capitã)'},{label:'Território',val:'Ginásio & Corredores'},{label:'Aliada',val:'Jocks'},{label:'Estilo',val:'Influência & Manipulação'}]
   },
   {
     id:'press',
