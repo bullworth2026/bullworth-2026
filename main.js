@@ -709,6 +709,15 @@ const LINHAGENS_DATA = [
 ];
 
 // ============================================================
+// FUNÇÃO AUXILIAR PARA NORMALIZAR NOMES DE HABILIDADES
+// ============================================================
+function normalizarNomeHabilidade(nome) {
+  // Remove sufixos como " (Merecimento/Mercado)" ou " (Merecimento/Mercado - R$ 15,00)"
+  // Também remove " (Merecimento/Mercado)" sozinho e qualquer variação com preço
+  return nome.replace(/\s*\([^)]*\)\s*$/, '').trim();
+}
+
+// ============================================================
 // DESCRIÇÕES DETALHADAS DAS HABILIDADES
 // ============================================================
 const HABILIDADES_DESC = {
@@ -917,28 +926,35 @@ const ModalHabilidades = {
       pacote.skills.forEach((skill) => {
         const li = document.createElement('li');
         let skillName = '';
+        let displayName = '';
+        
         if (typeof skill === 'string') {
           // Remove tags HTML para obter o nome puro
           const temp = document.createElement('div');
           temp.innerHTML = skill;
-          skillName = temp.textContent || skill;
-          li.innerHTML = skill;
+          displayName = temp.textContent || skill;
+          // Extrai o nome sem sufixo (Merecimento/Mercado)
+          skillName = normalizarNomeHabilidade(displayName);
+          li.innerHTML = skill; // exibe o nome completo com o custo
         } else if (typeof skill === 'object') {
-          skillName = skill.nome || skill.name || '';
-          li.innerHTML = `<strong>${skillName}</strong> ${skill.desc || skill.descricao || ''}`;
+          skillName = normalizarNomeHabilidade(skill.nome || skill.name || '');
+          displayName = skill.nome || skill.name || '';
+          li.innerHTML = `<strong>${displayName}</strong> ${skill.desc || skill.descricao || ''}`;
         } else {
-          skillName = String(skill);
-          li.textContent = skillName;
+          displayName = String(skill);
+          skillName = normalizarNomeHabilidade(displayName);
+          li.textContent = displayName;
         }
         
         // Adiciona evento de clique para mostrar descrição detalhada
         li.addEventListener('click', (e) => {
           e.stopPropagation();
-          const desc = HABILIDADES_DESC[skillName + "- R$15,00"];
+          // Primeiro tenta com o nome normalizado, se não encontrar, tenta com o original
+          const desc = HABILIDADES_DESC[skillName] || HABILIDADES_DESC[displayName];
           if (desc) {
-            this.abrirDescricao(skillName, desc, pacote.color || '#e8a020');
+            this.abrirDescricao(displayName, desc, pacote.color || '#e8a020');
           } else {
-            this.abrirDescricao(skillName, 'Descrição não disponível para esta habilidade.', pacote.color || '#e8a020');
+            this.abrirDescricao(displayName, 'Descrição não disponível para esta habilidade.', pacote.color || '#e8a020');
           }
         });
         
