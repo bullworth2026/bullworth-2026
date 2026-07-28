@@ -92,7 +92,7 @@ const FACTIONS = [
   {
     id:'jocks', tag:'ATLETAS', name:'Jocks', color:'#122A50',
     img:'https://i.pinimg.com/736x/65/95/80/659580ead7c51448abdb30eb00eeecf8.jpg',
-    territory:'Campo de Futebol & Ginásio', leader:'Cole Kavanagh', size:'10 membros ativos',
+    territory:'Campo de Futebol & Ginásio', leader:'Logan Carter', size:'10 membros ativos',
     desc:'Sete jogos, sete vitórias. Os Bullhorns estão de volta ao topo — e desta vez, mais perigosos, mais rápidos e mais viciados do que nunca. O campo é deles. A escola também.',
     brief:'Força. Vitória. A qualquer custo.',
     bonus:'BÔNUS ATIVO: +15% Estamina · +20% Força em uso de anabolizantes',
@@ -101,13 +101,13 @@ const FACTIONS = [
       subtitle: 'Os Bullhorns — Campo Sul, Bullworth Academy',
       paragraphs: [
         'Nos últimos dez anos, o internato conheceu o auge da fama e do controle dos Bullhorns sobre Bullworth. Dotados de músculos imensos e um wrestler dominante, a camarilha estabeleceu um reinado de corrupção e excesso de testosterona que durou até a chegada do último Rei — aquele que finalmente colocou ordem na casa, quebrando recordes e sendo levados a sério pela primeira vez naquela cidade abandonada por Deus.',
-        'Atualmente, o Campeão é Cole Kavanagh, líder dos atletas e Quarterback. Cole venceu o último chefão após lesão em disputa de território com o Rei, enfrentando-o no Torneio de Wrestling e removendo sua coroa à força enquanto os calouros visualizavam seu ídolo ser destronado de maneira brutal. Um novo contato de esteroides surge na Town, lucrando com o vício em performance dos jogadores, que se tornam cada vez mais dependentes dos hormônios oferecidos pelo Quarterback.',
+        'Atualmente, o Campeão é Logan Carter, líder dos atletas e Quarterback. Cole venceu o último chefão após lesão em disputa de território com o Rei, enfrentando-o no Torneio de Wrestling e removendo sua coroa à força enquanto os calouros visualizavam seu ídolo ser destronado de maneira brutal. Um novo contato de esteroides surge na Town, lucrando com o vício em performance dos jogadores, que se tornam cada vez mais dependentes dos hormônios oferecidos pelo Quarterback.',
         'Para Cole, cada vitória significa tudo. Considera seu antecessor fraco, pois permitiu que outro Rei assumisse o comando. Busca a todo custo enterrar sua memória. São sete jogos e sete vitórias, além de resultados positivos no wrestling que elevaram os Bullhorns ao nível nacional. Os anabolizantes, porém, cobram um custo alto — afetando o cérebro dos atletas e os fazendo ser tomados pela raiva, pela fúria descontrolada. Boatos correm que os Jocks dessa geração são como animais: você não pode falar nada de errado que eles pulam em você.',
         'Os Jocks mantêm aliança com as Cheerleaders e uma relação neutra com os Preppies. Bullies, Greasers e Nerds são pedras no caminho — peões de baixo nível e possíveis lacaios em seu reinado. A arrogância dos atletas é demais para isso. Seria o fim perder novamente.',
       ],
-      quote: '"Bullworth é uma selva e os Jocks são os reis dela — como sempre foi e sempre será." — Cole Kavanagh',
+      quote: '"Bullworth é uma selva e os Jocks são os reis dela — como sempre foi e sempre será." — Logan Carter',
     },
-    meta:[{label:'Líder',val:'Cole Kavanagh'},{label:'Território',val:'Campo & Ginásio'},{label:'Estilo',val:'Força Bruta + Anabolizantes'},{label:'Aliada',val:'Cheerleaders'}]
+    meta:[{label:'Líder',val:'Logan Carter'},{label:'Território',val:'Campo & Ginásio'},{label:'Estilo',val:'Força Bruta + Anabolizantes'},{label:'Aliada',val:'Cheerleaders'}]
   },
   {
     id:'cheerleaders', tag:'BULLWORTH CHERRIES', name:'Cheerleaders', color:'#D4537E',
@@ -411,7 +411,7 @@ const PACOTES_DATA = {
       img: 'https://i.imgur.com/AIhZ8fs.jpeg',
       imgPos: 'center 20%',
       desc: 'Como a tenente e pilar atlético das Líderes de Torcida (Cheerleaders), O Braço Esquerdo é a perfeita combinação entre agilidade acrobática e uma surpreendente potência física no campus de Bullworth Academy. Atuando como a peça de contenção e suporte tático de sua camarilha, ela quebra qualquer estereótipo ao alinhar o domínio técnico do combate de solo com uma mobilidade invejável em batalha. Com reflexos apurados, capacidade única de controle e uma presença física notória.',
-      skills: ['A "Paradinha" de Cole Kavanagh', 'Realeza do Wrestling', 'Acrobacia Rítmica']
+      skills: ['A "Paradinha" de Logan Carter', 'Realeza do Wrestling', 'Acrobacia Rítmica']
     }
   ]
 },
@@ -897,7 +897,7 @@ const HABILIDADES_DESC = {
   'Influência Hipnótica': 'Em instantes, é capaz de identificar desejos, inseguranças e ambições de qualquer pessoa. Domina a arte da influência com uma sutileza impecável. Um comentário cuidadosamente calculado fortalece egos; um silêncio no momento certo cria insegurança. As pessoas passam a buscar sua atenção e começam a reorganizar as próprias decisões em função daquilo que acreditam ser o seu desejo.',
   'Precisão Acrobática': 'Seu corpo responde com uma precisão quase impossível de reproduzir, executando saltos, giros, mortais e movimentos aéreos com uma naturalidade que desafia qualquer expectativa. Anos de treinamento fizeram com que equilíbrio, flexibilidade, coordenação e consciência corporal deixassem de ser habilidades e se tornassem instintos.',
   'Mente Inabalável': 'Sua mente funciona como uma fortaleza: organizada, disciplinada e praticamente imune ao caos. Medo, ansiedade, frustração ou pressão podem existir, mas jamais assumem o comando das suas decisões. O inesperado dificilmente a desestabiliza, e imprevistos são tratados como problemas a serem resolvidos, nunca como motivos para perder a compostura.',
-  'A "Paradinha" de Cole Kavanagh': 'Emprestado não é roubado, certo? Há quem jure ter visto você fuçando os pertences do capitão dos Bullhorns, de onde "coincidentemente" desapareceram uma ampola e uma seringa. O resultado: músculos crescendo em um ritmo quase milagroso. Sendo mulher, você pode igualar seu porte ao dos atletas mais bem treinados. Sua força cresce na mesma proporção, tornando cada golpe mais devastador. O desgaste físico é muito maior, e a fadiga pode surgir mais rápido do que você imagina.',
+  'A "Paradinha" de Logan Carter': 'Emprestado não é roubado, certo? Há quem jure ter visto você fuçando os pertences do capitão dos Bullhorns, de onde "coincidentemente" desapareceram uma ampola e uma seringa. O resultado: músculos crescendo em um ritmo quase milagroso. Sendo mulher, você pode igualar seu porte ao dos atletas mais bem treinados. Sua força cresce na mesma proporção, tornando cada golpe mais devastador. O desgaste físico é muito maior, e a fadiga pode surgir mais rápido do que você imagina.',
   'Realeza do Wrestling': 'Diferentemente de modalidades baseadas em socos, chutes e golpes de impacto, no wrestling o verdadeiro campo de batalha é o solo. Com domínio básico na área, sabe conduzir seus oponentes exatamente para onde pertencem: ao chão.',
   'Acrobacia Rítmica': 'Piruetas, mortais e sequências de saltos deixam de ser meros elementos de espetáculo para se tornarem recursos de mobilidade, evasão e reposicionamento. Sua eficácia é inegável, sobretudo diante de adversários cuja velocidade e capacidade de reação não acompanham a leveza e a agilidade de seus movimentos.'
 };
