@@ -1,0 +1,471 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Academia Bullworth</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@300;400;600;700&family=Special+Elite&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <meta name="referrer" content="no-referrer">
+</head>
+<body>
+
+<div class="bg-image" id="bg-image"></div>
+<div class="bg-overlay"></div>
+<div class="bg-lines"></div>
+<canvas id="bg-canvas"></canvas>
+
+<div class="parallax-container">
+  <div class="layer layer-bg" data-depth="0.04"></div>
+  <div class="layer layer-mid" data-depth="0.10"></div>
+  <div class="layer layer-front" data-depth="0.22"></div>
+</div>
+
+<div id="loading-screen">
+  <canvas id="loading-canvas"></canvas>
+  <div class="ls-scanlines"></div>
+  <div class="ls-vignette"></div>
+  <div class="ls-top-title">
+    <span class="ls-top-year">2026</span>
+  </div>
+  <div class="loading-container">
+    <div class="loading-crest">
+      <div class="loading-ring r1"></div>
+      <div class="loading-ring r2"></div>
+      <div class="loading-ring r3"></div>
+      <div class="ls-corner c1"></div>
+      <div class="ls-corner c2"></div>
+      <div class="ls-corner c3"></div>
+      <div class="ls-corner c4"></div>
+      <div class="loading-logo-slot">
+        <img src="https://i.pinimg.com/736x/93/31/7f/93317f36c39cb89fa0b2ebf92c74bb46.jpg" alt="Bullworth Academy" onerror="this.style.display='none';document.getElementById('ls-fb').style.display='flex'">
+      </div>
+    </div>
+    <div class="ls-academy-wrap">
+      <div class="ls-rule"></div>
+      <div class="loading-title" id="ls-title">BULLWORTH ACADEMY</div>
+      <div class="ls-rule"></div>
+    </div>
+    <div id="loading-text">Verificando matrícula...</div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar"><div id="loading-bar-fill"></div></div>
+    </div>
+    <button id="loading-enter-btn">
+      <span class="ls-btn-bg"></span>
+      <span class="ls-btn-text">ENTRAR NA ACADEMIA</span>
+      <span class="ls-btn-arrow">→</span>
+    </button>
+  </div>
+  <div class="ls-bottom-bar">
+    <span>BULLWORTH ACADEMY</span>
+    <span>·</span>
+    <span>CLASS OF 2026</span>
+  </div>
+</div>
+
+<div id="yt-player-wrap"><div id="yt-player"></div></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<div class="layout" id="main-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-logo-wrap">
+      <img src="https://imgur.com/GsIAdM8.gif" alt="Bullworth Academy" class="sidebar-img" onerror="this.style.display='none'">
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" data-page="inicio" class="active">Início</a></li>
+        <li class="nav-item"><a href="#" data-page="biblioteca">Biblioteca</a></li>
+        <li class="nav-item"><a href="#" data-page="camarilhas">Camarilhas</a></li>
+        <li class="nav-item"><a href="#" data-page="pacotes">Pacotes</a></li>
+        <li class="nav-item"><a href="#" data-page="aquisicao">Aquisição</a></li>
+        <li class="nav-item"><a href="#" data-page="linhagens">Linhagens</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-deco">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/960px-Rockstar_Games_Logo.svg.png"
+           alt=""
+           class="sidebar-deco-img"
+           onerror="this.style.display='none'">
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="https://discord.gg/XMfDuQWHW" target="_blank" class="discord-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.054a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+        </svg>
+        Discord
+      </a>
+      <div class="sidebar-footer-row">
+        <span id="clock">00:00</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="content-frame">
+      <div class="frame-top-bar"></div>
+      <div class="frame-body">
+
+        <!-- PÁGINA INÍCIO -->
+        <div class="page-panel active" data-panel="inicio">
+          <div class="hero-section">
+            <h1 class="hero-title">BULLWORTH ACADEMY</h1>
+            <div class="hero-subtitle">Sem Rei, sem paz. Bem-vindos à corrida pelo trono de Bullworth.</div>
+          </div>
+          <div class="panel-divider"></div>
+          <p class="view-desc">Bem-vindo à <strong>Academia Bullworth</strong>. Fundada em 1932, a academia sempre foi um caldeirão de rivalidades, alianças e segredos. Aqui, cada corredor conta uma história — e cada camarilha define seu destino.</p>
+
+          <div class="lore-accordion">
+            <button class="lore-toggle" id="lore-toggle" type="button">
+              <span class="lore-toggle-text">
+                <span class="lore-toggle-title">O TRONO ESTÁ VAGO</span>
+                <span class="lore-toggle-sub">A ascensão e queda do Rei Tyler — clique para ler a história completa</span>
+              </span>
+              <span class="lore-toggle-arrow">▾</span>
+            </button>
+            <div class="lore-content" id="lore-content">
+              <div class="lore-content-inner">
+                <p class="lore-paragraph">Há dois anos, um filho da puta chamado <strong>Tyler</strong> chegou em Bullworth. No começo, ninguém ligou muito pra ele. Era só mais um calouro no meio da bagunça geral. Mas o cara foi subindo na marra, sem aliança fixa com nenhuma camarilha, sem lamber saco de ninguém e sem medo de pisar no calo de quem mandava.</p>
+                <p class="lore-paragraph">Ele humilhou os Bullies, que achavam que eram donos da escola, uniu os Nerds na porrada quando precisou, colocou os Preppies no chinelo, irritou os Greasers até eles o respeitarem e fez até os Jocks baixarem a bola. Foi aí que a galera começou a chamar ele de <strong>Rei</strong>. Durante dois anos inteiros, Tyler mandou nessa porra toda como Governante Supremo do internato. Ele bagunçou as hierarquias antigas, resolveu (ou piorou) várias tretas que já duravam anos e deixou sua marca em cada canto de Bullworth Academy.</p>
+                <p class="lore-paragraph">Tyler nunca foi de aliança fixa. Tinha seus favoritos espalhados por aí, soltava umas frases que davam esperança para uns e gelava a espinha de outros, mas nunca apontou um herdeiro oficial. No final do ano letivo, ele simplesmente se formou e caiu fora sem olhar para trás, sem deixar um sucessor claro.</p>
+                <p class="lore-paragraph lore-emphasis">E foi aí que a merda começou de verdade.</p>
+                <p class="lore-paragraph">Quando o Rei saiu, deixou um vácuo de poder do caralho. Sem sucessor declarado, cada líder de camarilha começou a se achar o escolhido. Uns juram que eram próximos dele, que o cara dava indiretas claras (<em>"você vai longe, porra"</em>), outros inventam que ele favorecia seu jeito de liderar. E tem ainda os oportunistas que nem ligam pra essa conversa de "legado" e só querem dominar a escola mesmo, controlar os corredores, o pátio, o comércio paralelo e foder com quem sobrar.</p>
+                <p class="lore-paragraph">Com o tempo, muita gente começou a romantizar a passagem dele pela escola. Tyler virou quase uma lenda no internato. Muitos alunos passaram a encarar a atitude dele como algo quase filosófico: ele acreditava que Bullworth deveria ser governada por alguém forte o suficiente para unificá-la, e não por direito dinástico, herança de camarilha ou qualquer merda desse tipo. O novo Rei teria que provar na prática que era capaz de fazer isso — na marra, se preciso.</p>
+                <p class="lore-paragraph">O clima agora tá pesado pra caralho. Todo mundo se olha torto nos corredores, as conversas baixas nos dormitórios viraram rotina, os olhares atravessados no refeitório são constantes e cada grupinho tá se armando do seu jeito — seja com alianças novas, seja com planos por baixo dos panos. Ainda não rolou guerra aberta, mas a galera tá chamando isso de <strong>"a calmaria antes da merda"</strong>. A tensão tá no ar, todo mundo se preparando, e é nítido que a bomba pode estourar a qualquer momento. Cada camarilha tem seu candidato se posicionando como o novo Rei, cada um com sua historinha de legitimidade.</p>
+                <p class="lore-paragraph">E você? Tá chegando bem no meio dessa zona cinzenta, justo quando a escola mais precisa (ou não) de um novo governante.</p>
+                <p class="lore-closing">Bem-vindo de volta a Bullworth, cara.<br>O trono tá vago.<br>E a briga pra sentar nele tá só começando.</p>
+
+                <div class="lore-events-accordion">
+                  <button class="lore-events-toggle" id="lore-events-toggle" type="button">
+                    <span class="lore-events-toggle-text">ACONTECIMENTOS RECENTES</span>
+                    <span class="lore-events-toggle-arrow">▾</span>
+                  </button>
+                  <div class="lore-events-content" id="lore-events-content">
+                    <p class="lore-events-intro">Desde a saída do Rei, várias merdas aconteceram e deixaram as camarilhas putas da vida umas com as outras:</p>
+                    <div class="lore-event-card" style="--ev-color:#c0392b">
+                      <span class="lore-event-tag">Bullies vs. Nerds</span>
+                      <h4 class="lore-event-title">Incidente do Refeitório</h4>
+                      <p class="lore-event-desc">Um grupo de Bullies tentou extorquir alguns Nerds durante o almoço. Em vez de aguentarem quietos, os Nerds derramaram sopa quente nos trombadinhas e ainda filmaram a humilhação. Os Bullies juraram vingança, e agora caçam os nerdolas pelos corredores do internato.</p>
+                    </div>
+                    <div class="lore-event-card" style="--ev-color:#534AB7">
+                      <span class="lore-event-tag">Greasers vs. Preppies</span>
+                      <h4 class="lore-event-title">Ressentimentos Antigos</h4>
+                      <p class="lore-event-desc">Alguém sabotou e riscou várias motos dos Greasers. Eles acusam diretamente os Preppies, dizendo que foi vingança pela humilhação que levaram no passado. Os mauricinhos negam veementemente, mas estão rindo por trás. As duas camarilhas voltaram a se enfrentar pelos corredores em brigas menores, ainda sem a participação direta dos líderes. O ressentimento entre os dois grupos só aumenta a cada dia.</p>
+                    </div>
+                    <div class="lore-event-card" style="--ev-color:#378ADD">
+                      <span class="lore-event-tag">Jocks vs. Nerds</span>
+                      <h4 class="lore-event-title">Bagunça na Biblioteca</h4>
+                      <p class="lore-event-desc">Alguns Jocks invadiram a biblioteca e quebraram tudo quanto é coisa durante uma brincadeira idiota. Os Nerds estão extremamente putos e juram que vão se vingar na marra (ou com algum plano bem sujo).</p>
+                    </div>
+                    <div class="lore-event-card" style="--ev-color:#D4537E">
+                      <span class="lore-event-tag">Bullies vs. Cheerleaders</span>
+                      <h4 class="lore-event-title">Coração Partido</h4>
+                      <p class="lore-event-desc">Um Bullie agrediu uma caloura das Cheerleaders depois que ela se recusou a passar o número para ele. As Cheerleaders estão putas da vida com os Bullies e o clima entre os dois grupos azedou feio.</p>
+                    </div>
+                    <div class="lore-event-card" style="--ev-color:#639922">
+                      <span class="lore-event-tag">Preppies / Greasers vs. Jocks</span>
+                      <h4 class="lore-event-title">Pancadaria na Encruzilhada</h4>
+                      <p class="lore-event-desc">Alguns calouros dos Preppies e dos Greasers têm se encontrado na encruzilhada para trocar porrada. Numa dessas brigas, dois atletas acabaram se envolvendo e levaram uma surra. Agora os Jocks estão putos da vida tanto com os Preppies quanto com os Greasers.</p>
+                    </div>
+                    <p class="lore-events-outro">Esses acontecimentos deixaram todas as camarilhas no limite. Alianças surgem e quebram da noite pro dia, a desconfiança tá geral e falta só uma faísca pra essa porra toda explodir de verdade.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="sec-label">CAMARILHAS DOMINANTES</span>
+          <div class="carousel-wrapper">
+            <div class="faction-img-grid" id="inicio-faction-grid"></div>
+            <button class="carousel-arrow carousel-arrow-left" id="carousel-left-inicio" aria-label="Anterior">‹</button>
+            <button class="carousel-arrow carousel-arrow-right" id="carousel-right-inicio" aria-label="Próximo">›</button>
+            <div class="carousel-indicator">↔ Arraste para os lados</div>
+          </div>
+        </div>
+
+        <!-- PÁGINA BIBLIOTECA (NOVO CONTEÚDO) -->
+        <div class="page-panel" data-panel="biblioteca">
+          <h2 class="panel-title">BIBLIOTECA</h2>
+          <div class="panel-subtitle">Manual do Estudante — Os Sistemas de Bullworth</div>
+          <div class="panel-divider"></div>
+
+          <div class="bib-content">
+
+            <!-- INTRODUÇÃO -->
+            <p class="view-desc">
+              Em Bullworth Academy, os <strong>Sistemas</strong> constituem o conjunto de mecânicas que regem o funcionamento do projeto e moldam a experiência de jogo. São eles que determinam a forma como os personagens interagem, evoluem e disputam espaço dentro da academia e da cidade, estabelecendo regras claras para conflitos, progressão e convivência.
+            </p>
+            <p class="view-desc">
+              Cada sistema desempenha um papel específico na dinâmica do RPG, regulamentando aspectos como combate, disputa territorial e respeito, entre outros elementos que influenciam diretamente o cotidiano dos personagens. Juntos, eles formam a base estrutural do projeto, garantindo equilíbrio, estratégia e profundidade às narrativas desenvolvidas pelos jogadores.
+            </p>
+
+            <div class="panel-divider"></div>
+
+            <!-- GUIA DE COMBATE -->
+            <h3 class="bib-section-title">GUIA DE COMBATE</h3>
+
+            <h4 class="bib-subtitle">I. Guia de Combate</h4>
+            <p class="bib-text">
+              Simplista como tem de ser, o sistema abrange não unicamente, mas majoritariamente o senso dos envolvidos. Salvo o uso de habilidades dispostas no site e seus contextos específicos, é possível realizar <strong>somente um ataque por turno</strong>. Igualmente, apenas uma defesa ou esquiva por vez, e, para angariar o direito de defender-se novamente, deve-se receber um golpe integral do adversário. Ambas as características são, de fato, inegociáveis. É pertinente perceber que estes pontos se mantêm quando o combate está perfeitamente parelho; do contrário, a luta tende naturalmente a favorecer o mais forte em todos os aspectos.
+            </p>
+            <p class="bib-text">
+              É permitido utilizar <strong>até duas habilidades especiais na mesma ação</strong>, desde que não desempenhem a mesma finalidade. Assim, não é permitido combinar duas habilidades estritamente defensivas (como um bloqueio absoluto e uma defesa perfeita) ou duas habilidades estritamente ofensivas na mesma ação. A combinação de habilidades deve respeitar suas funções e a lógica da mecânica, permitindo, por exemplo, o uso de uma habilidade defensiva seguida de uma ofensiva.
+            </p>
+            <p class="bib-text">
+              Os combates do projeto são, por regra, estritamente limitados ao formato <strong>1x1 (um contra um)</strong>. A única exceção ocorre quando uma mecânica autoriza expressamente a formação de superioridade numérica, como no caso da <strong>Covardia</strong>. Além disso, <strong>Líderes</strong> constituem uma exceção natural a essa regra: podem ser enfrentados por dois adversários simultaneamente (2x1), embora não possam fazer o mesmo, salvo quando expressamente autorizado por seus próprios recursos. Qualquer outra forma de combate em superioridade numérica é vedada pelas mecânicas do projeto.
+            </p>
+            <p class="bib-text">
+              Vale ressaltar que armamentos devem ser <strong>mirados e carregados em uma ação</strong> e, apenas na subsequente, podem ser disparados contra seus alvos. É impossível esquivar-se de projéteis dentro de sua área de assertividade, fato que evidencia o quão pertinente é o uso das armas disponíveis — desde que dentro dessa mesma área.
+            </p>
+
+            <h4 class="bib-subtitle">II. O Grappling</h4>
+            <p class="bib-text">
+              Por ser mais problemático de se lidar, o grappling deve ser idealizado separadamente. É reiterado no guia que ele será tratado em pé de igualdade para com as demais artes, o que implica na questão de direito-dever. Quando ostentar o direito de defesa, o desvencilhar do agarre é irrevogável e o atacante deve aceitar. O inverso, contudo, é igualmente verdadeiro: o atacado, se dominado sem direito de defesa vigente, deve acatar o feito adversário.
+            </p>
+
+            <h4 class="bib-subtitle">III. Consequências</h4>
+            <p class="bib-text">
+              Pancadas assertivas devem ter consequências palpáveis. Um soco curvilíneo no queixo certamente é muito mais que suficiente para atordoar alguém, claro, sob méritos de personagens equivalentes. É notável a diferença entre um calouro, um veterano e um possuinte de Legado, mas é igualmente notável que ninguém é de ferro. Para manter um roleplay interessante para ambos os lados, aceitar golpes e interpretar seus impactos e derivados destes não é demérito, e sim uma demonstração de qualidade interpretativa. Da mesma forma que perder não é demérito também, afinal, pode ser que a distinção de força entre ambos os personagens seja pesada o suficiente para impedir uma vitória. Lembramos e reiteramos que este RPG é a construção de uma história e ninguém é o protagonista, todos estão suscetíveis a derrota hora ou outra. E qual o problema em perder, afinal? Não é o jogador quem vence ou perde, é o personagem. E às vezes, uma queda é o catapultar para uma construção narrativa muito mais interessante.
+            </p>
+
+            <div class="panel-divider"></div>
+
+            <!-- GUERRA E RESPEITO -->
+            <h3 class="bib-section-title">GUERRA E RESPEITO</h3>
+
+            <h4 class="bib-subtitle">I. Guerra</h4>
+            <p class="bib-text">
+              Guerra é o estado de conflito aberto entre duas ou mais camarilhas. Uma vez declarada, a hostilidade entre as facções envolvidas torna-se <strong>permanente até que o conflito seja encerrado</strong>, autorizando confrontos diretos entre seus membros em qualquer ocasião. Ainda assim, seus respectivos hierárquicos permanecem livres para estabelecer negociações, firmar acordos ou discutir os termos de uma eventual rendição.
+            </p>
+            <p class="bib-text">
+              Durante a guerra, as camarilhas passam a poder <strong>invadir os territórios</strong> umas das outras, bem como disputar áreas neutras ou ainda não reivindicadas dentro da escola.
+            </p>
+            <p class="bib-text">
+              Toda Disputa Territorial, Invasão Territorial ou Batalha em Larga Escala deverá ser <strong>previamente combinada entre os hierárquicos</strong> das camarilhas envolvidas, permitindo que ambas as partes reúnam seus membros até o horário estipulado para o confronto. Em todos os casos, a Organização deverá ser comunicada antecipadamente, cabendo-lhe registrar e acompanhar o evento sempre que necessário.
+            </p>
+            <p class="bib-text">
+              Da mesma forma, toda declaração de guerra deverá ser <strong>obrigatoriamente comunicada à Organização</strong>, que reconhecerá oficialmente o início do conflito para todos os efeitos das mecânicas do projeto.
+            </p>
+
+            <h4 class="bib-subtitle">Organização dos Conflitos</h4>
+            <p class="bib-text">
+              Toda Batalha em Larga Escala ou Invasão Territorial deverá ser previamente combinada entre os hierárquicos das camarilhas envolvidas, a fim de que ambos os lados disponham de tempo suficiente para reunir seus membros até o horário estipulado para o confronto. Além disso, a Organização deverá ser comunicada antecipadamente sobre a realização do evento, cabendo-lhe acompanhar e supervisionar seu andamento sempre que necessário.
+            </p>
+            <p class="bib-text">
+              Da mesma forma, toda declaração de guerra deverá ser obrigatoriamente comunicada à Organização, que registrará oficialmente o início do conflito e passará a reconhecê-lo para todos os efeitos das mecânicas do projeto.
+            </p>
+
+            <h4 class="bib-subtitle">Formas de Encerrar uma Guerra</h4>
+            <p class="bib-text">Uma guerra pode ser vencida de diferentes maneiras:</p>
+            <ul class="bib-list">
+              <li><strong>Subjugação:</strong> método mais demorado, obtido por meio da derrota sucessiva das forças inimigas e da conquista de todos os seus territórios, impondo uma condição de completa vassalagem;</li>
+              <li><strong>Conquista Decisiva:</strong> consiste na tomada do território original da camarilha adversária, seguida da derrota de seu líder;</li>
+              <li><strong>Resolução Diplomática:</strong> ambas as partes podem encerrar o conflito mediante acordo mútuo. Dependendo dos termos estabelecidos, a guerra poderá ser considerada encerrada sem um vencedor absoluto.</li>
+            </ul>
+
+            <h4 class="bib-subtitle">II. Batalhas em Larga Escala</h4>
+            <p class="bib-text">
+              Uma guerra passa a ser considerada uma <strong>Batalha em Larga Escala</strong> quando dois exércitos se enfrentam sob o comando de, pelo menos, um hierárquico de cada camarilha.
+            </p>
+            <p class="bib-text">
+              O comandante não precisa ser obrigatoriamente o líder, podendo a função ser exercida pelo vice-líder ou por um tenente. Veteranos podem atuar como oficiais ou sargentos durante o confronto, mas jamais assumir o comando de toda a força militar da camarilha.
+            </p>
+            <p class="bib-text">Quando uma batalha em larga escala ocorre em <strong>território neutro ou disputado</strong>, entram em vigor as seguintes regras:</p>
+            <ul class="bib-list">
+              <li>O combate em <strong>2x1</strong> é permitido para todos os participantes;</li>
+              <li>Recursos exclusivos destinados às batalhas em larga escala tornam-se utilizáveis por seus respectivos detentores, como, por exemplo, a armadura de futebol americano dos Jocks.</li>
+            </ul>
+
+            <h4 class="bib-subtitle">Formas de Vencer uma Batalha</h4>
+            <p class="bib-text">Uma batalha em larga escala pode ser vencida das seguintes maneiras:</p>
+            <ul class="bib-list">
+              <li>Derrotando o <strong>comandante</strong> do exército inimigo;</li>
+              <li>Fazendo o exército adversário <strong>bater em retirada</strong> após o primeiro contato entre as tropas;</li>
+              <li><strong>Eliminando completamente</strong> as forças inimigas.</li>
+            </ul>
+
+            <h4 class="bib-subtitle">Defesa Territorial</h4>
+            <p class="bib-text">
+              Quando uma batalha em larga escala ocorre <strong>dentro do território pertencente a uma camarilha</strong>, algumas regras são alteradas:
+            </p>
+            <ul class="bib-list">
+              <li>O combate em <strong>2x1</strong> é permitido exclusivamente à facção defensora;</li>
+              <li>Permanecem disponíveis todos os recursos exclusivos destinados às batalhas em larga escala.</li>
+            </ul>
+
+            <h4 class="bib-subtitle">III. Respeito</h4>
+            <p class="bib-text">
+              O <strong>Respeito</strong> representa a influência e a legitimidade de cada camarilha dentro de Bullworth Academy. É ele quem determina qual facção se aproxima do domínio absoluto sobre a escola e, consequentemente, da conquista da <strong>Coroa de Bullworth</strong>.
+            </p>
+            <p class="bib-text">
+              Todas as camarilhas participantes iniciam a disputa com <strong>0% de Respeito</strong>. O objetivo consiste em alcançar <strong>100%</strong>, condição necessária para vencer a corrida pelo trono deixado vago.
+            </p>
+            <p class="bib-text">O Respeito pode ser adquirido por diferentes meios, dentre eles:</p>
+            <ul class="bib-list">
+              <li>Derrotar completamente uma camarilha adversária;</li>
+              <li>Derrotar o líder de uma camarilha rival;</li>
+              <li>Vencer batalhas de grande importância durante uma guerra;</li>
+              <li>Reivindicar novos territórios para sua camarilha.</li>
+            </ul>
+            <p class="bib-text">
+              O ganho de Respeito varia de acordo com a relevância do feito realizado, cabendo à administração definir sua porcentagem sempre que necessário, a fim de preservar o equilíbrio competitivo e narrativo do projeto.
+            </p>
+
+            <div class="panel-divider"></div>
+
+            <!-- CONQUISTA TERRITORIAL -->
+            <h3 class="bib-section-title">CONQUISTA TERRITORIAL</h3>
+
+            <h4 class="bib-subtitle">I. Disputa e Invasão</h4>
+            <p class="bib-text">
+              Considera-se <strong>Disputa Territorial</strong> toda tentativa de reivindicar um território neutro ou disputado, isto é, que não pertença a nenhuma camarilha. Já as investidas contra territórios pertencentes a outras facções são classificadas como <strong>Invasões Territoriais</strong>.
+            </p>
+            <p class="bib-text">
+              Ao iniciar uma tentativa de conquista de um território neutro ou disputado, a camarilha interessada deverá <strong>anunciar oficialmente sua intenção à Organização</strong>. A partir desse momento, abre-se um prazo de <strong>1 (uma) hora em offline</strong>, durante o qual qualquer outra camarilha poderá contestar a reivindicação e disputar o território.
+            </p>
+            <p class="bib-text">
+              Durante esse período, a facção interessada deverá permanecer no local e estabelecer um <strong>símbolo</strong> que represente sua ocupação — como uma bandeira, pintura, objeto característico ou qualquer outro elemento narrativamente compatível com sua identidade. Caso nenhuma contestação seja apresentada dentro do prazo estabelecido, o território será <strong>automaticamente incorporado</strong> ao domínio da camarilha, sem necessidade de combate.
+            </p>
+            <p class="bib-text">
+              A expansão de uma camarilha para áreas próximas ao território de outra poderá ser interpretada como um <strong>casus belli</strong>, legitimando uma declaração de guerra ou autorizando a facção vizinha a impedir a expansão e disputar a posse do local. Sempre que isso ocorrer, a situação deverá ser comunicada previamente à Organização.
+            </p>
+            <p class="bib-text">
+              Além disso, determinados territórios estratégicos somente poderão ser conquistados após a ocupação de áreas que lhes servem como <strong>acesso ou zona de influência</strong>. Assim, para invadir certos locais, será necessário dominar previamente outros territórios específicos. Por exemplo, para conquistar a Oficina dos Descolados (Greasers), será indispensável ocupar com sucesso o Beco Greaser. O mesmo princípio se aplica às demais camarilhas e aos respectivos territórios definidos pela Organização.
+            </p>
+            <p class="bib-text">
+              Essa mecânica existe para valorizar a <strong>expansão territorial</strong> e a construção de zonas de influência. Ao conquistar territórios neutros ou disputados, uma camarilha estabelece camadas de proteção ao redor de seu quartel-general, dificultando o avanço inimigo e tornando qualquer tentativa de invasão muito mais custosa sob o ponto de vista estratégico.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- PÁGINA CAMARILHAS -->
+        <div class="page-panel" data-panel="camarilhas">
+          <h2 class="panel-title">CAMARILHAS</h2>
+          <div class="panel-subtitle">As facções que governam Bullworth</div>
+          <div class="panel-divider"></div>
+          <p class="view-desc">Cada grupo social possui <strong>territórios, líderes e vantagens exclusivas</strong>. Clique em uma camarilha para ver seus detalhes completos.</p>
+          <div class="carousel-wrapper">
+            <div class="faction-img-grid" id="camarilhas-grid"></div>
+            <button class="carousel-arrow carousel-arrow-left" id="carousel-left-camarilhas" aria-label="Anterior">‹</button>
+            <button class="carousel-arrow carousel-arrow-right" id="carousel-right-camarilhas" aria-label="Próximo">›</button>
+            <div class="carousel-indicator">↔ Arraste para os lados</div>
+          </div>
+        </div>
+
+        <!-- PÁGINA PACOTES -->
+        <div class="page-panel" data-panel="pacotes">
+          <h2 class="panel-title">PACOTES</h2>
+          <div class="panel-subtitle">Habilidades e Builds Disponíveis</div>
+          <div class="panel-divider"></div>
+          <div class="pacotes-tabs">
+            <button class="pacote-tab on" data-target="gerais">PACOTES GERAIS</button>
+            <button class="pacote-tab" data-target="exclusivos">PACOTES EXCLUSIVOS</button>
+          </div>
+          <div id="pacotes-gerais" class="pacote-view on">
+            <p class="view-desc">Pacotes disponíveis para <strong>todos os membros</strong> da camarilha via mercado. Um jogador pode possuir até dois pacotes de seu grupo. Selecione a camarilha para filtrar.</p>
+            <div class="faction-filter" id="faction-filter"></div>
+            <div id="grid-gerais" class="pkg-grid" style="margin-top:1.25rem"></div>
+          </div>
+          <div id="pacotes-exclusivos" class="pacote-view">
+            <div class="pkg-excl-warning">
+              <div>
+                <div class="pkg-excl-warning-title">PACOTES DE HIERARQUIA</div>
+                <div class="pkg-excl-warning-body">Estes pacotes são exclusivos e destinados unicamente aos três principais representantes de cada camarilha: <strong>Líder, Vice-Líder e Tenente</strong>. Constituem atributos inerentes aos respectivos cargos e <strong>não podem ser adquiridos, aprendidos, transferidos, copiados ou obtidos</strong> por qualquer outro meio. Sua utilização é restrita aos personagens que ocupam essas posições.</div>
+              </div>
+            </div>
+            <div class="faction-filter" id="faction-filter-exclusivos"></div>
+            <div id="grid-exclusivos" class="pkg-grid" style="margin-top:1.25rem"></div>
+          </div>
+        </div>
+
+        <!-- PÁGINA AQUISIÇÃO -->
+        <div class="page-panel" data-panel="aquisicao">
+          <h2 class="panel-title">AQUISIÇÃO</h2>
+          <div class="panel-subtitle">Habilidades e Vantagens Disponíveis</div>
+          <div class="panel-divider"></div>
+          <div class="priv-tabs" id="priv-tabs"></div>
+          <div id="priv-panels"></div>
+        </div>
+
+        <!-- PÁGINA LINHAGENS -->
+        <div class="page-panel" data-panel="linhagens">
+          <h2 class="panel-title">LINHAGENS</h2>
+          <div class="panel-subtitle">O Sangue que Define o Destino</div>
+          <div class="panel-divider"></div>
+          <p class="view-desc">Cada família carrega um legado único, habilidades inatas e uma influência que molda os rumos de Bullworth Academy. Conheça as linhagens que dominam o internato e escolha seu destino.</p>
+          <div class="linhagens-tabs" id="linhagens-tabs"></div>
+          <div id="linhagens-panels"></div>
+        </div>
+
+      </div>
+    </div>
+    
+  </main>
+
+</div>
+
+<!-- TOOLTIP -->
+<div id="tooltip"></div>
+
+<!-- MODAL DE CAMARILHA -->
+<div class="modal-overlay" id="faction-modal">
+  <div class="modal-wrapper" id="modal-wrapper">
+    <div class="modal-accent-bar" id="modal-accent"></div>
+    <div class="modal-info-side-only">
+      <div class="modal-header">
+        <span class="modal-tag" id="modal-tag"></span>
+        <h2 class="modal-name" id="modal-name"></h2>
+      </div>
+      <div class="modal-divider"></div>
+      <div class="modal-body">
+        <p class="modal-desc" id="modal-desc"></p>
+        <div id="modal-lore" class="modal-lore-section" style="display:none"></div>
+      </div>
+      <button class="modal-close" id="modal-close">✕ FECHAR</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DE HABILIDADES DOS PACOTES -->
+<div class="modal-habilidades-overlay" id="modalHabilidades">
+  <div class="modal-habilidades-content">
+    <button class="modal-hab-close" id="modalHabClose">X</button>
+    <div style="padding-right:10px;">
+      <div class="modal-hab-header">
+        <span class="modal-hab-faction" id="modalHabFaction"></span>
+        <h2 class="modal-hab-title" id="modalHabTitle"></h2>
+        <div class="modal-hab-subtitle" id="modalHabSubtitle"></div>
+      </div>
+      <div class="modal-divider" style="margin:0.8rem 0 1.2rem;"></div>
+      <div class="modal-hab-body">
+        <p class="modal-hab-desc" id="modalHabDesc"></p>
+        <div class="modal-hab-skills-title">HABILIDADES</div>
+        <ul class="modal-hab-skills-list" id="modalHabSkills"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SUB-MODAL DE DESCRIÇÃO DA HABILIDADE -->
+<div class="modal-hab-desc-overlay" id="modalHabDescOverlay">
+  <div class="modal-hab-desc-content">
+    <button class="modal-hab-desc-close" id="modalHabDescClose">X</button>
+    <div style="padding-right:10px;">
+      <h3 class="modal-hab-desc-title" id="modalHabDescTitle"></h3>
+      <div class="modal-divider" style="margin:0.6rem 0 1rem;"></div>
+      <p class="modal-hab-desc-text" id="modalHabDescText"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Chalk overlay -->
+<div id="chalk-overlay"><canvas id="chalk-canvas"></canvas></div>
+
+<!-- Sound -->
+<button id="sound-btn" class="muted">🔇 SOM: OFF</button>
+
+<script src="main.js"></script>
+</body>
+</html>
