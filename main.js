@@ -619,7 +619,7 @@ const LINHAGENS_DATA = [
     habilidades: [
       {
         titulo: 'Diabo Falante',
-        texto: 'O Smith é mestre na arte da oratória, superando a capacidade argumentativa de qualquer estudante ou funcionário do campus. Suas mentiras e manipulações são tão bem estruturadas que se tornam fatos indiscutíveis na mente de quem as escuta, afetando calouros e veteranos. A única maneira de rebater suas afirmações é através da apresentação de provas concretas; do contrário, ele pode arruinar reputações permanentemente ou supervalorizar aliados conforme seus objetivos, controlando as narrativas do internato.'
+        texto: 'O Smith é mestre na arte da oratória, superando a capacidade argumentativa de qualquer estudante ou funcionário do campus. Suas mentiras e manipulações são tão bem estruturadas que se tornam fatos indiscutíveis na mente de quem as escuta, afetando calouros e veteranos. A única maneira de rebater suas afirmações é através da apresentação de provas concretas; do contrário, diante qualquer brecha, ele pode arruinar reputações permanentemente ou supervalorizar aliados conforme seus objetivos, controlando as narrativas do internato. <strong>Para além disso, o Smith também consegue manipular pessoas a fazerem favores através de ordens verbais simples para calouros e veteranos, como uma capacidade hipnótica, muito tentadora, para que o defendam, o entreguem ou peguem algo, entre outros atos que se enquadrem como favores. Vale ressaltar as delimitações da habilidade, como não fazer membros de camarilhas se voltarem contra seus líderes, e nada absurdo</strong>.'
       },
       {
         titulo: 'Aprendiz de Maquiavel',
@@ -627,7 +627,7 @@ const LINHAGENS_DATA = [
       },
       {
         titulo: 'Pistola de Tomates',
-        texto: 'O Smith carrega uma arma customizada de longo alcance com munição limitada, cujo alcance atinge até sete quadrados de distância sem a necessidade de gastar ações para mirar. O equipamento pode realizar apenas cinco disparos por situação. A arma dispara projéteis compactados que cegam temporariamente o alvo por um turno ao atingirem o rosto, impossibilitando a percepção de golpes subsequentes.'
+        texto: 'O Smith carrega uma arma customizada de longo alcance com munição ilimitada, cujo alcance atinge até sete quadrados de distância sem a necessidade de gastar ações para mirar. O equipamento pode realizar apenas cinco disparos por situação. A arma dispara projéteis compactados que cegam temporariamente o alvo por um turno ao atingirem o rosto, impossibilitando a percepção de golpes subsequentes. Para nocautear calouros basta 3 disparos sucessivos na cabeça ou regiões sensíveis, para lidar com veteranos basta 5 disparos, vice-líderes 8 disparos e líderes 12; os alvos, quando atingidos por metade do que é necessário para serem nocauteados, ficam desnorteados, o que é um efeito negativo que dificulta ações de defesa, ataque ou locomoção.'
       }
     ]
   },
